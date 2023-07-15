@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sofia Iotti - Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Monoton&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Desktop\Fogli web\Il mio portfolio\Index-responsive.css">
+<link rel="icon" type="image/x-icon" href="c:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Desktop\Fogli web\Il mio portfolio\favicon.ico">
+</head>
+
+<body>
+
+    <div class="menu">
+        <div class="nome">
+            <a href="file:///C:/Users/SofiaIotti/OneDrive%20-%20Il%20Polo%20Digitale/Desktop/Fogli%20web/Il%20mio%20portfolio/index-responsive.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="C:\Users\SofiaIotti\Downloads\nome def.png"></a>
+        </div>
+        <div class="selezione">
+            <div class="sudimeButton"><a href="#aboutmeLink">Su di me</a></div>
+            <div class="formazioneButton"><a href="#formazioneLink">Formazione</a></div>
+            <div class="esperienzeButton"><a href="#esperienzeLink">Esperienze</a></div>
+            <div class="contattiButton"><a href="">Contatti</a></div>
+            <div class="galleryButton"><a href="#galleryLink">Gallery</a></div>
+        </div>
+    </div>
+    <div class="dropdownMenu">
+        <div class="dropdownNome">
+            <a href="file:///C:/Users/SofiaIotti/OneDrive%20-%20Il%20Polo%20Digitale/Desktop/Fogli%20web/Il%20mio%20portfolio/index-responsive.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="C:\Users\SofiaIotti\Downloads\nome def.png"></a>
+        </div>
+        <img class="dropdownButton" onclick="myFunction()" src="C:\Users\SofiaIotti\Downloads\dropdownmenu-removebg-preview.png">
+        
+    </div>
+    <div id="verticalmenu" class="verticalMenu">  
+            <ul>
+                <li class="sudimeDropmenu"><a href="#aboutmeLink">Su di me</a></li>
+                <li class="formazioneDropmenu"><a href="#formazioneLink">Formazione</a></li>
+                <li class="esperienzeDropmenu"><a href="#esperienzeLink">Esperienze</a></li>
+                <li class="contattiDropmenu"><a href="">Contatti</a></li>
+                <li class="galleryDropmenu"><a href="#galleryLink">Gallery</a></li>
+            </ul>
+        </div>
+<script>     
+    function myFunction() {
+        var verticalmenu = document.getElementById('verticalmenu');
+        if(verticalmenu.style.display == "flex") {
+            document.getElementById("verticalmenu").style.display = "none";
+        }
+        else document.getElementById("verticalmenu").style.display = "flex";
+    }
+
+    document.addEventListener('click', function handleClickOutsideBox(event) {
+        var verticalmenu = document.getElementById('verticalmenu');
+        var dropdownButton = document.getElementsByClassName('dropdownButton')[0];
+
+        if (!verticalmenu.contains(event.target) && !dropdownButton.contains(event.target) && verticalmenu.style.display == "flex" ) {
+            document.getElementById("verticalmenu").style.display = "none";
+        }
+    });
+</script>
+<div class="homeContainer">
+    <div class="welcomeImgContainer">
+        <img class="welcomeImg" src="C:\Users\SofiaIotti\Downloads\benvenuto def.png">
+    </div>
+    <div class="myImageContainer">
+        <img id="myImage" src="img/profileImage.png">
+    </div>
+</div>
+
+<div class="sezioni">
+    <svg id="aboutmeLink"class="rotate" viewBox="0 0 500 70">
+        <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+    </svg>
+<div  class="sectionAboutme">
+    <div class="aboutmeTitle">
+        <img src="C:\Users\SofiaIotti\Downloads\Sudime-removebg-preview.png">
+    </div>
+    <div class="aboutmeText">
+        <div class="amtext"><div class="amtextTitle">ENERGIA</div><p>Ho ricoperto ruoli molto diversi tra loro nel mio percorso professionale e questo mi ha insegnato ad adattarmi a diverse situazioni, affrontando le sfide con decisione ed energia.<br>Amo relazionarmi con gli altri e trovo stimolante il lavoro in team, cercando di trarre il meglio da ogni occasione.</p></div>
+        <div class="amtext"><div class="amtextTitle">CURIOSITÀ</div><p>Mi definisco una persona curiosa perchè trovo appassionante imparare cose nuove attraverso lo studio e le esperienze della vita quotidiana. <br>Ognuno di noi ha qualcosa da raccontare e da insegnare; per questo condividere significa creare nuove, incredibili possibilità.</p></div>
+        <div class="amtext"><div class="amtextTitle">EQUILIBRIO</div><p>Nel mio tempo libero cerco di seguire con equilibrio una vita sana e di mantenermi attiva, nonostante io preferisca passatempi più tranquilli. <br>Mi piace stare con amici, immergermi nella natura e provare cose nuove. Ultimamente dedico molto tempo allo studio, fondamentale nella realizzazione dei miei obiettivi.</p></div>
+    </div>
+</div>
+<svg class="norotate" viewBox="0 0 500 70"id="formazioneLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div class="sectionFormazione">
+    <div class="formazioneTitle">
+        <img src="C:\Users\SofiaIotti\Downloads\Formazione-removebg-preview.png">
+    </div>
+    <div class="formazioneText">
+        
+        <div class="ftext">
+            <div class="ftextTitle"><a href="https://talent.start2impact.it/profile/sofia-iotti#pills-certificate">Digital Marketing- Start2Impact University</a></div>
+            <p>2023- In corso<br>
+            Ho intrapreso il mio percorso di studi con il Master in Digital Marketing, scoprendo strada facendo un interesse 	particolare per lo Sviluppo Web. Con Start2Impact prima studio la teoria, poi metto in pratica quello che ho imparato con il 	supporto di professionisti del settore. Il loro feedback mi aiuta a capire cosa ho fatto bene e cosa, invece, posso migliorare 	con un po' di pratica.<br><br>
+            Ho superato gli esami di:<br> 
+            <span style="font-size:x-large;">HTML & CSS<br>
+                SEO<br>
+                ANALISI STRATEGICA<br>
+                SOCIAL MEDIA<br>
+                COPYWRITING</span>
+            </p>
+        </div>
+        <div class="ftext">
+            <div class="ftextTitle">Certificato di Lingua Inglese livello C1 Language First</div>
+                <p>Sostenuto a gennaio 2022 a termine di un percorso di circa un anno in una scuola di lingua a Reggio Emilia.</p>
+            <div class="ftextTitle">Corso Modellista dell'Abbigliamento - ForModena</div>
+                <p>Tra il 2018 e il 2019 ho seguito un corso a Carpi(MO) per modelliste, imparando le tecniche di confezione dei capi e realizzazione di modelli manualmente e tramite CAD. Ho approfondito alcuni argomenti inerenti al sistema moda e tecnicismi sui tessuti. Il corso si è concretizzato in uno stage di tre mesi per il brand Gaudì.</p>
+            <div class="ftextTitle">Diploma di Liceo Linguistico - Liceo Aldo Moro (RE)</div>
+                <p>Durante gli anni del liceo (2012-2017) ho studiato Inglese, Spagnolo e Tedesco.</p>        
+        </div>
+    </div>
+</div>
+<svg class="rotate" viewBox="0 0 500 70" id="esperienzeLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div  class="sectionEsperienze" >
+    <div class="esperienzeTitle">
+        <img src="C:\Users\SofiaIotti\Downloads\Esperienze-removebg-preview.png">
+    </div>
+    <div class="esperienzeText">
+        <div class="etext">
+            <div class="etextTitle">Comunicazione Interna e<br>Servizi Generali<br>Polo Digitale Srl | Ottobre 2021 - Presente</div>
+                <p>Partendo dai Servizi Generali, da un anno affianco
+                    il team Marketing del brand nei progetti riguardanti la
+                    comunicazione e l'organizzazione eventi.<br><br>
+                    
+                    Nel tempo mi sono occupata di molteplici attività:<br>
+                    Comunicazione interna<br>
+                    Gestione e creazione contenuti per la Intranet aziendale<br>
+                    Scrittura articoli sito e newsletter<br>
+                    Supporto nell'organizzazione eventi aziendale<br>
+                    Creazione report<br>
+                    Stesura PED<br>
+                    Profilazione lead<br></p>
+        </div>
+        <div class="etext">
+            <div class="etextTitle">Addetta al confezionamento<br>di articoli tessili<br>Frog.Pro | Luglio 2019 - Settembre 2021</div>
+                <p>Questo ruolo mi ha permesso di sviluppare buone doti
+                    organizzative, di gestione del lavoro e problem solving.<br>
+                    Il mio ruolo prevedeva anche l'affiancamento e la
+                    formazione delle nuove risorse durante il processo di realizzazione dei prodotti e la
+                    stesura dei processi produttivi utilizzati.</p>
+        </div>
+    </div>
+</div>
+<svg class="norotate" viewBox="0 0 500 70" id="galleryLink">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+<div  class="sectionGallery">
+    <div class="galleryTitle">
+        <img src="C:\Users\SofiaIotti\Downloads\Gallery-removebg-preview.png"></div>
+    <div style="width:65vw;" class="galleryText">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\HTML_e_CSS_Certificato.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\1686845571474.jpg">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\ingleseC1parlato.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\ingleseC1scritto.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\SEO_Certificato.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\Analisi strategica.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\Copywriting_Certificato.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\Social_Media_Certificato.png">
+        <img src="C:\Users\SofiaIotti\OneDrive - Il Polo Digitale\Immagini\buffa.png">
+    </div>
+</div>
+<svg class="rotate" viewBox="0 0 500 70">
+    <path d="M 0 30 C 150 100 280 0 500 40 L 500 0 L 0 0" fill="#bcdae0"></path>
+</svg>
+</div>
+</body>
+</html>
