@@ -7,15 +7,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&family=Monoton&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="Index-responsive.css">
-<link rel="icon" type="image/x-icon" href="Img\favicon.ico">
+<link rel="stylesheet" href="assets\Index-responsive.css">
+<script type="text/JavaScript" src="assets\portfolio.js"></script>
+<link rel="icon" type="image/x-icon" href="assets\favicon.ico">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Scopri il mio portfolio - Iotti Sofia">
+<meta property="og:url" content="https://sofiaiotti.github.io">
+<meta property="og:image" content="assets\ogimage.png">
 </head>
 
 <body>
 
     <div class="menu">
         <div class="nome">
-            <a href="index.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="Img\nome def.png"></a>
+            <a href="index.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="assets\nome def.png" alt="Nome Sofia Iotti"></a>
         </div>
         <div class="selezione">
             <div class="sudimeButton"><a href="#aboutmeLink">Su di me</a></div>
@@ -27,9 +32,9 @@
     </div>
     <div class="dropdownMenu">
         <div class="dropdownNome">
-            <a href="index.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="Img\nome def.png"></a>
+            <a href="index.html" style="background-color:#bcdae0;"><img class="nomeImage"  src="assets\nome def.png" alt="Nome Sofia Iotti"></a>
         </div>
-        <img class="dropdownButton" onclick="myFunction()" src="Img\dropdownmenu-removebg-preview.png">
+        <img class="dropdownButton" onclick="myFunction()" src="assets\dropdownmenu-removebg-preview.png" alt="Bottone del menu">
         
     </div>
     <div id="verticalmenu" class="verticalMenu">  
@@ -40,31 +45,13 @@
                 <li class="contattiDropmenu"><a href="Contatti.html">Contatti</a></li>
                 <li class="galleryDropmenu"><a href="#galleryLink">Gallery</a></li>
             </ul>
-        </div>
-<script>     
-    function myFunction() {
-        var verticalmenu = document.getElementById('verticalmenu');
-        if(verticalmenu.style.display == "flex") {
-            document.getElementById("verticalmenu").style.display = "none";
-        }
-        else document.getElementById("verticalmenu").style.display = "flex";
-    }
-
-    document.addEventListener('click', function handleClickOutsideBox(event) {
-        var verticalmenu = document.getElementById('verticalmenu');
-        var dropdownButton = document.getElementsByClassName('dropdownButton')[0];
-
-        if ( !dropdownButton.contains(event.target) && verticalmenu.style.display == "flex" ) {
-          document.getElementById("verticalmenu").style.display = "none";
-        }
-    });
-</script>
+    </div>
 <div class="homeContainer">
     <div class="welcomeImgContainer">
-        <img class="welcomeImg" src="Img\benvenuto def.png">
+        <h1><img class="welcomeImg" src="assets\benvenuto def.png" alt="Benvenuto nel portfolio di Sofia Iotti"></h1>
     </div>
     <div class="myImageContainer">
-        <img id="myImage" src="Img\profileImage.png">
+        <img id="myImage" src="assets\profileImage.png" alt="Immagine profilo di Sofia Iotti">
     </div>
 </div>
 
@@ -74,7 +61,7 @@
     </svg>
 <div  class="sectionAboutme">
     <div class="aboutmeTitle">
-        <img src="Img\Sudime-removebg-preview.png">
+        <img src="assets\Sudime-removebg-preview.png" alt="Sezione informazioni su Sofia Iotti">
     </div>
     <div class="aboutmeText">
         <div class="amtext"><div class="amtextTitle">ENERGIA</div><p>Ho ricoperto ruoli molto diversi tra loro nel mio percorso professionale e questo mi ha insegnato ad adattarmi a diverse situazioni, affrontando le sfide con decisione ed energia.<br>Amo relazionarmi con gli altri e trovo stimolante il lavoro in team, cercando di trarre il meglio da ogni occasione.</p></div>
@@ -87,7 +74,7 @@
 </svg>
 <div class="sectionFormazione">
     <div class="formazioneTitle">
-        <img src="Img\Formazione-removebg-preview.png">
+        <img src="assets\Formazione-removebg-preview.png" alt="Sezione sulle esperienze formative">
     </div>
     <div class="formazioneText">
         
@@ -118,7 +105,7 @@
 </svg>
 <div  class="sectionEsperienze" >
     <div class="esperienzeTitle">
-        <img src="Img\Esperienze-removebg-preview.png">
+        <img src="assets\Esperienze-removebg-preview.png" alt="Sezione sulle esperienze lavorative">
     </div>
     <div class="esperienzeText">
         <div class="etext">
@@ -151,17 +138,17 @@
 </svg>
 <div  class="sectionGallery">
     <div class="galleryTitle">
-        <img src="Img\Gallery-removebg-preview.png"></div>
+        <img src="assets\Gallery-removebg-preview.png" alt="Gallery con certificati e attestati di Sofia Iotti"></div>
     <div style="width:65vw;" class="galleryText">
-        <img src="Img\HTML_e_CSS_Certificato.png">
-        <img src="Img\1686845571474.jpg">
-        <img src="Img\ingleseC1parlato.png">
-        <img src="Img\ingleseC1scritto.png">
-        <img src="Img\SEO_Certificato.png">
-        <img src="Img\Analisi strategica.png">
-        <img src="Img\Copywriting_Certificato.png">
-        <img src="Img\Social_Media_Certificato.png">
-        <img src="Img\buffa.png">
+        <img src="assets\HTML_e_CSS_Certificato.png">
+        <img src="assets\1686845571474.jpg">
+        <img src="assets\ingleseC1parlato.png">
+        <img src="assets\ingleseC1scritto.png">
+        <img src="assets\SEO_Certificato.png">
+        <img src="assets\Analisi strategica.png">
+        <img src="assets\Copywriting_Certificato.png">
+        <img src="assets\Social_Media_Certificato.png">
+        <img src="assets\buffa.png">
     </div>
 </div>
 <svg class="rotate" viewBox="0 0 500 70">

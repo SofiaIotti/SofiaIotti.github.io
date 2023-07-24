@@ -272,8 +272,9 @@ li> a{
     padding: 10px;
 }
 .bodyForm{
-    height: 100vh;
+    height: 88vh;
     width: 100vw;
+    margin-top: 12vh;
     display: flex;
     flex-direction: column;
     align-items: center;
