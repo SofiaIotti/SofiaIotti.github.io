@@ -61,6 +61,7 @@ body{
 .nome> a{
     display: flex;
     justify-content: center;
+    background-color:#bcdae0;
 }
 .homeContainer{
     width: 100%;
@@ -193,6 +194,9 @@ svg{
     background-color:#bcdae0;
     width: 40%;
 }
+.dropdownNome> a{
+    background-color:#bcdae0;
+}
 .dropdownButton{
     background-color:#bcdae0;
     height: 100%;
@@ -265,8 +269,14 @@ li> a{
     font-size:x-large;
     text-shadow: 2px 2px 2px #bcdae0;
 }
+#spanfText{
+    font-size:x-large;
+}
 .aboutmeTitle> img, .formazioneTitle> img, .esperienzeTitle> img, .galleryTitle> img {
     width: 100%;
+}
+.galleryText{
+    width:65vw;
 }
 .galleryText> img{
     padding: 10px;
@@ -369,4 +379,7 @@ li> a{
     background-color: #f7ebd8;  
     padding: 20px; 
     
+}
+#nomeA{
+    background-color:#bcdae0;
 }
